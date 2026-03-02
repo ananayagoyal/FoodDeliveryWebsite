@@ -1,0 +1,174 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    display: flex;
+    height: 90vh;
+}
+
+.location-bar {
+    background-color: white;
+    padding: 8px 15px;
+}
+.hero-text {
+    flex: 1;
+    background-color: #111;
+    color: white;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+
+
+.btn-primary {
+    background-color:#ff7a00;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color:#ff7a00;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #ff7a00;
+    color: #ff7a00;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.btn-outline:hover {
+    background-color: #ff7a00;
+    color: white;
+}
+
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #ffa600;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.main-header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.main-header nav a:hover {
+    text-decoration: underline;
+}
+
+
+.main-footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #ff7a00;
+    color: white;
+}
+.best-sellers {
+    padding: 30px;
+    text-align: center;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 200px;
+}
+
+.item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+
+.hero-text {
+    position: relative;
+}
+
+.location-bar {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 380px;              
+    background: #fff;           
+    padding: 8px 12px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.location-bar input {
+    flex: 1;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px 0 0 20px;
+}
+
+.location-bar button {
+    border: none;
+    background: #000;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
