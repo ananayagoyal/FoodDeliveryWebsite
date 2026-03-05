@@ -7,11 +7,10 @@
 <section class="hero">
    
     <div class="hero-text">
-        <!-- location bar inserted again -->
-        <div class="location-bar">
-            <input type="text" placeholder="Enter your location">
-            <button>Set</button>
-        </div>
+        <form class="location-bar" action="/menu" method="get">
+            <input type="text" name="location" placeholder="Enter your location">
+            <button type="submit">Set</button>
+        </form>
 
         <h1>A TASTE SENSATION <br> LIKE NO OTHER</h1>
         <p>
@@ -21,7 +20,7 @@
 
         <div class="buttons">
             <a href="/menu"><button class="btn-primary">Order Now</button></a>
-            <button class="btn-outline">Know More</button>
+           
         </div>
     </div>
 

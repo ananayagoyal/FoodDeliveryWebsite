@@ -133,12 +133,12 @@ body {
     object-fit: cover;
 }
 
-/* position container for the location bar */
+
 .hero-text {
     position: relative;
 }
 
-/* location bar styling */
+
 .location-bar {
     position: absolute;
     top: 30px;
@@ -169,7 +169,7 @@ body {
     cursor: pointer;
 }
 
-/* menu tabs styles */
+
 .categories {
     margin: 20px 0;
     text-align: center;
