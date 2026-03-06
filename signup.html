@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Foodie Signup</title>
+  <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+
+  <div class="login-card">
+    <h1>🍔 FoodieHub</h1>
+    <p class="tagline">Create your account</p>
+
+    <form action="/signup" method="POST">
+      <div class="input-group">
+        <input type="text" name="name" required>
+        <label>Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" name="email" required>
+        <label>Email</label>
+      </div>
+
+      <div class="input-group">
+        <input type="password" name="password" required>
+        <label>Password</label>
+      </div>
+
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <p class="footer-text">
+      Already have an account?
+      <a href="/">Login</a>
+    </p>
+  </div>
+
+</body>
+</html>
