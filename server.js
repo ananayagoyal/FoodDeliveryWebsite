@@ -1,7 +1,13 @@
+const mongoose = require("mongoose");
 const express = require("express");
 const path = require("path");
 
 const app = express();
+
+// Connect to MongoDB
+mongoose.connect("mongodb://127.0.0.1:27017/food-delivery")
+.then(() => console.log("MongoDB Connected ✅"))
+.catch(err => console.log(err));
 
 // Middleware
 app.use(express.urlencoded({ extended: true }));
