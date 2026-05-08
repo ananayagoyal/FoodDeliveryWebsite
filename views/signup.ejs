@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Foodie Signup</title>
+  <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+
+  <div class="login-card">
+    <h1>🍔 FoodieHub</h1>
+    <p class="tagline">Create your account</p>
+
+    <!-- SHOW ERROR MESSAGE -->
+    <% if (typeof message !== "undefined" && message) { %>
+      <p style="color:red; text-align:center;"><%= message %></p>
+    <% } %>
+
+    <form action="/signup" method="POST" enctype="multipart/form-data">
+
+      <div class="input-group">
+        <input type="text" name="firstName" required>
+        <label>First Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="text" name="lastName">
+        <label>Last Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" name="email" required>
+        <label>Email</label>
+      </div>
+
+      <div class="input-group">
+        <input type="text" name="username" required>
+        <label>Username</label>
+      </div>
+
+      <div class="input-group">
+        <input type="number" name="age">
+        <label>Age</label>
+      </div>
+
+      <div class="input-group">
+        <input type="password" name="password" required>
+        <label>Password</label>
+      </div>
+
+      <img id="preview" width="80" style="margin-top:10px; border-radius:50%; display:none;">
+
+      <!-- PROFILE PIC UPLOAD -->
+      <div class="input-group file-upload">
+        <label>Upload Profile Picture</label>
+        <input type="file" name="profilePic" accept="image/*">
+      </div>
+
+      <button type="submit">Sign Up</button>
+
+    </form>
+
+    <p class="footer-text">
+      Already have an account?
+      <a href="/">Login</a>
+    </p>
+
+  </div>
+
+</body>
+</html>
+
+<script>
+  const input = document.querySelector('input[name="profilePic"]');
+  const preview = document.getElementById("preview");
+
+  input.addEventListener("change", function() {
+    const file = this.files[0];
+    if (file) {
+      preview.style.display = "block";
+      preview.src = URL.createObjectURL(file);
+    }
+  });
+</script>

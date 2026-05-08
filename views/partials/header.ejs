@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FoodieHub</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<header class="main-header">
+
+    <!-- LEFT: LOGO -->
+    <div class="logo">
+        🍔 FoodieHub
+    </div>
+
+    <!-- CENTER: NAV -->
+    <nav class="nav-links">
+        <a href="/home">🏠 Home</a>
+        <a href="/menu">📋 Menu</a>
+        <a href="/cart">🛒 Cart</a>
+        <a href="/contact">📞 Contact</a>
+    </nav>
+
+    <!-- RIGHT: USER PROFILE -->
+    <div class="nav-right">
+
+        <% if (name) { %>
+
+            <!-- PROFILE IMAGE -->
+            <% if (profilePic) { %>
+                <img src="<%= profilePic %>" class="profile-pic">
+            <% } else { %>
+                <img src="/images/default-user.png" class="profile-pic">
+            <% } %>
+
+            <!-- USER NAME -->
+            <span class="username"><%= name %></span>
+
+            <!-- LOGOUT -->
+            <a href="/logout" class="login-btn">Logout</a>
+
+        <% } else { %>
+
+            <!-- LOGIN BUTTON -->
+            <a href="/login" class="login-btn">Login</a>
+
+        <% } %>
+
+    </div>
+
+</header>

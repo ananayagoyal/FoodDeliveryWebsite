@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Checkout - FoodieHub</title>
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <style>
+    body {
+      background: #f5f7fa;
+      font-family: Arial, sans-serif;
+    }
+
+    .checkout-container {
+      display: flex;
+      gap: 30px;
+      padding: 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      flex: 1;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      outline: none;
+    }
+
+    textarea {
+      resize: none;
+      height: 90px;
+    }
+
+    .order-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .total {
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 15px;
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+    }
+
+    .btn {
+      margin-top: 15px;
+      width: 100%;
+      padding: 12px;
+      background: #ff4d4d;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #e60000;
+    }
+
+    .location-btn {
+      background: #333;
+    }
+
+    .location-btn:hover {
+      background: #000;
+    }
+
+    @media(max-width: 768px) {
+      .checkout-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<%- include("partials/header") %>
+
+<div class="checkout-container">
+
+  <!-- LEFT: ADDRESS FORM -->
+  <div class="card">
+    <h2>📍 Delivery Details</h2>
+
+    <form action="/place-order" method="POST">
+
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Full Name" required>
+      </div>
+
+      <div class="form-group">
+        <input type="text" name="phone" placeholder="Phone Number" required>
+      </div>
+
+      <div class="form-group">
+        <!-- ✅ IMPORTANT ID ADDED -->
+        <textarea id="address" name="address" placeholder="Delivery Address" required></textarea>
+      </div>
+
+      <!-- ✅ LOCATION BUTTON -->
+      <button type="button" onclick="getLocation()" class="btn location-btn">
+        📍 Use Current Location
+      </button>
+
+      <button type="submit" class="btn">
+        Place Order 🚀
+      </button>
+
+    </form>
+  </div>
+
+  <!-- RIGHT: ORDER SUMMARY -->
+  <div class="card">
+    <h2>🧾 Order Summary</h2>
+
+    <% let total = 0; %>
+
+    <% cart.forEach(item => { %>
+      <div class="order-item">
+        <span><%= item.name %> (x<%= item.quantity %>)</span>
+        <span>₹<%= item.price * item.quantity %></span>
+      </div>
+
+      <% total += item.price * item.quantity; %>
+    <% }) %>
+
+    <div class="total">
+      Total: ₹<%= total %>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+async function getLocation() {
+
+  if (!navigator.geolocation) {
+    alert("Geolocation is not supported ❌");
+    return;
+  }
+
+  const locationBtn = document.querySelector(".location-btn");
+  locationBtn.innerHTML = "Fetching location...";
+
+  navigator.geolocation.getCurrentPosition(
+
+    async (position) => {
+
+      const lat = position.coords.latitude;
+      const lon = position.coords.longitude;
+
+      try {
+
+        const response = await fetch(
+          `/get-address?lat=${lat}&lon=${lon}`
+        );
+
+        const data = await response.json();
+
+        console.log(data);
+
+        // FULL ADDRESS FOUND
+        if (data.display_name) {
+
+          document.getElementById("address").value =
+            data.display_name;
+
+          alert("Current location added successfully ✅");
+
+        }
+
+        // PARTIAL ADDRESS
+        else if (data.address) {
+
+          let place = "";
+
+          if (data.address.road)
+            place += data.address.road + ", ";
+
+          if (data.address.city)
+            place += data.address.city + ", ";
+
+          if (data.address.state)
+            place += data.address.state + ", ";
+
+          if (data.address.country)
+            place += data.address.country;
+
+          document.getElementById("address").value = place;
+
+          alert("Approximate address added ✅");
+
+        }
+
+        // FALLBACK
+        else {
+
+          document.getElementById("address").value =
+            `Latitude: ${lat}, Longitude: ${lon}`;
+
+          alert("Coordinates added instead 📍");
+        }
+
+      } catch (error) {
+
+        console.error(error);
+
+        document.getElementById("address").value =
+          `Latitude: ${lat}, Longitude: ${lon}`;
+
+        alert("Using coordinates as fallback 📍");
+      }
+
+      locationBtn.innerHTML = "📍 Use Current Location";
+    },
+
+    (error) => {
+      console.error(error);
+
+      alert("Location permission denied ❌");
+
+      locationBtn.innerHTML = "📍 Use Current Location";
+    }
+
+  );
+}
+</script>
+
+</body>
+</html>

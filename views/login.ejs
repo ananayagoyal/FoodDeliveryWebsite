@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Foodie Login</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body>
+
+    <div class="login-card">
+        <h1>🍔 FoodieHub</h1>
+        <p class="tagline">Delicious food, delivered fast</p>
+
+        <!-- 🔴 SHOW ERROR MESSAGE -->
+        <% if (message) { %>
+            <p style="color:red; text-align:center;"><%= message %></p>
+        <% } %>
+
+        <form action="/login" method="POST">
+            <div class="input-group">
+                <input type="email" name="email" required>
+                <label>Email</label>
+            </div>
+
+            <div class="input-group">
+                <input type="password" name="password" required>
+                <label>Password</label>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+        <a href="/auth/google">
+        <button style="background:#4285F4; color:white; margin-top:10px;"> Continue with Google </button>
+</a>
+</a>
+
+        <p class="footer-text">
+            Not have an account?
+            <a href="/signup">Create one</a>
+        </p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<%- include("partials/header") %>
+
+<div class="cart-wrapper">
+
+  <h2 class="cart-title">🛒 Your Cart</h2>
+
+  <% if (cart.length === 0) { %>
+
+    <div class="empty-cart">
+      <img src="/images/empty-cart.png" alt="Empty Cart">
+      <p>Your cart is empty 😔</p>
+      <a href="/menu"><button class="btn-primary">Browse Menu</button></a>
+    </div>
+
+  <% } else { %>
+
+    <div class="cart-grid">
+
+      <% let total = 0; %>
+
+      <% cart.forEach((item, index) => { %>
+
+        <div class="cart-card">
+
+          <img src="<%= item.image %>" class="cart-img">
+
+          <div class="cart-info">
+            <h3><%= item.name %></h3>
+            <p class="price">₹<%= item.price %></p>
+
+            <!-- Quantity Controls -->
+            <div class="qty-controls">
+
+              <form action="/decrease" method="POST">
+                <input type="hidden" name="index" value="<%= index %>">
+                <button class="qty-btn">−</button>
+              </form>
+
+              <span class="qty"><%= item.quantity %></span>
+
+              <form action="/increase" method="POST">
+                <input type="hidden" name="index" value="<%= index %>">
+                <button class="qty-btn plus">+</button>
+              </form>
+
+            </div>
+
+            <!-- Remove -->
+            <form action="/remove-from-cart" method="POST">
+              <input type="hidden" name="index" value="<%= index %>">
+              <button class="remove-btn">Remove</button>
+            </form>
+
+          </div>
+
+        </div>
+
+        <% total += item.price * item.quantity; %>
+
+      <% }) %>
+
+    </div>
+
+    <!-- TOTAL SECTION -->
+    <div class="cart-summary">
+      <h2>Total: ₹<%= total %></h2>
+      <a href="/checkout"><button class="checkout-btn">Proceed to Checkout</button></a>
+    </div>
+
+  <% } %>
+
+</div>
+
+<%- include("partials/footer") %>
