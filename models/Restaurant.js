@@ -1,41 +1,19 @@
 const mongoose = require("mongoose");
 
+const menuSchema = new mongoose.Schema({
+  name: String,
+  category: String,
+  price: Number,
+  image: String
+});
+
 const restaurantSchema = new mongoose.Schema({
-
-  name: {
-    type: String,
-    required: true
-  },
-
-  image: {
-    type: String,
-    required: true
-  },
-
-  cuisine: {
-    type: String
-  },
-
-  rating: {
-    type: Number,
-    default: 4.0
-  },
-
-  deliveryTime: {
-    type: String,
-    default: "30 mins"
-  },
-
-  menu: [
-    {
-      name: String,
-      category: String,
-      price: Number,
-      image: String,
-      description: String
-    }
-  ]
-
+  name: String,
+  image: String,
+  cuisine: String,
+  rating: Number,
+  deliveryTime: String,
+  menu: [menuSchema]
 });
 
 module.exports = mongoose.model("Restaurant", restaurantSchema);

@@ -109,25 +109,25 @@ app.get("/contact", (req, res) => {
 });
 
 
+// ================= RESTAURANTS PAGE =================
+
 app.get("/restaurants", async (req, res) => {
 
-  const restaurants = await Restaurant.find();
+  try {
 
-  res.render("restaurants", {
-    restaurants
-  });
+    const restaurants = await Restaurant.find();
 
-});
+    res.render("restaurants", {
+      restaurants
+    });
 
-app.get("/restaurant/:id", async (req, res) => {
-
-  const restaurant = await Restaurant.findById(req.params.id);
-
-  res.render("restaurant-menu", {
-    restaurant
-  });
+  } catch (err) {
+    console.log(err);
+    res.send("Error loading restaurants ❌");
+  }
 
 });
+
 // ================= CART =================
 
 // ADD TO CART

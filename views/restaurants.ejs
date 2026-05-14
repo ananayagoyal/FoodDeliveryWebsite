@@ -1,62 +1,194 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurants - FoodieHub</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
 
-    body{
-      font-family: Arial;
-      background:#f5f5f5;
+    *{
       margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins', sans-serif;
+    }
+
+    body{
+      background:#f5f5f5;
+    }
+
+    .hero{
+      height:350px;
+      background:
+      linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
+      url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1600&auto=format&fit=crop');
+
+      background-size:cover;
+      background-position:center;
+
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+
+    .hero h1{
+      font-size:60px;
+      margin-bottom:15px;
+    }
+
+    .hero p{
+      font-size:20px;
+      margin-bottom:25px;
+    }
+
+    .search-box{
+      width:100%;
+      max-width:650px;
+
+      display:flex;
+      background:white;
+      border-radius:50px;
+      overflow:hidden;
+    }
+
+    .search-box input{
+      flex:1;
+      padding:18px;
+      border:none;
+      outline:none;
+      font-size:16px;
+    }
+
+    .search-box button{
+      border:none;
+      background:#ff4d4d;
+      color:white;
+      padding:18px 30px;
+      cursor:pointer;
+      font-size:16px;
+    }
+
+    .categories{
+      max-width:1300px;
+      margin:40px auto;
+      padding:0 20px;
+
+      display:flex;
+      gap:20px;
+      overflow-x:auto;
+    }
+
+    .category{
+      min-width:130px;
+      background:white;
+      padding:20px;
+      border-radius:20px;
+      text-align:center;
+      box-shadow:0 5px 15px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+
+    .category:hover{
+      transform:translateY(-5px);
+      background:#ff4d4d;
+      color:white;
+    }
+
+    .category img{
+      width:70px;
+      height:70px;
+      border-radius:50%;
+      object-fit:cover;
+      margin-bottom:10px;
     }
 
     .container{
-      max-width:1200px;
+      max-width:1300px;
       margin:auto;
-      padding:30px;
+      padding:20px;
     }
 
-    h1{
+    .title{
+      font-size:35px;
       margin-bottom:30px;
     }
 
     .grid{
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-      gap:25px;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:30px;
     }
 
     .card{
       background:white;
-      border-radius:15px;
+      border-radius:20px;
       overflow:hidden;
-      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      box-shadow:0 8px 25px rgba(0,0,0,0.08);
       transition:0.3s;
     }
 
     .card:hover{
-      transform:translateY(-5px);
+      transform:translateY(-8px);
     }
 
     .card img{
       width:100%;
-      height:220px;
+      height:230px;
       object-fit:cover;
     }
 
     .content{
-      padding:15px;
+      padding:20px;
+    }
+
+    .top{
+      display:flex;
+      justify-content:space-between;
+      margin-bottom:12px;
+    }
+
+    .top h2{
+      font-size:24px;
     }
 
     .rating{
-      color:green;
-      font-weight:bold;
+      background:#16a34a;
+      color:white;
+      padding:5px 10px;
+      border-radius:8px;
+      font-size:14px;
     }
 
-    a{
+    .cuisine{
+      color:#666;
+      margin-bottom:15px;
+    }
+
+    .bottom{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .delivery{
+      font-weight:600;
+    }
+
+    .btn{
+      background:#ff4d4d;
+      color:white;
+      padding:10px 16px;
+      border-radius:10px;
       text-decoration:none;
-      color:black;
     }
 
   </style>
@@ -65,39 +197,91 @@
 
 <body>
 
+<%- include("partials/header") %>
+
+<section class="hero">
+
+  <h1>🍔 Discover Great Food</h1>
+
+  <p>Order from top restaurants near you</p>
+
+  <div class="search-box">
+    <input type="text" placeholder="Search restaurants or dishes...">
+    <button>Search</button>
+  </div>
+
+</section>
+
+<div class="categories">
+
+  <div class="category">
+    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=500&auto=format&fit=crop">
+    <h3>Pizza</h3>
+  </div>
+
+  <div class="category">
+    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=500&auto=format&fit=crop">
+    <h3>Burgers</h3>
+  </div>
+
+  <div class="category">
+    <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=500&auto=format&fit=crop">
+    <h3>Desserts</h3>
+  </div>
+
+  <div class="category">
+    <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?q=80&w=500&auto=format&fit=crop">
+    <h3>Indian</h3>
+  </div>
+
+  <div class="category">
+    <img src="https://images.unsplash.com/photo-1551024709-8f23befc6cf7?q=80&w=500&auto=format&fit=crop">
+    <h3>Drinks</h3>
+  </div>
+
+</div>
+
 <div class="container">
 
-  <h1>🍴 Restaurants Near You</h1>
+  <h1 class="title">🔥 Popular Restaurants</h1>
 
   <div class="grid">
 
     <% restaurants.forEach(r => { %>
 
-      <a href="/restaurant/<%= r._id %>">
+      <div class="card">
 
-        <div class="card">
+        <img src="<%= r.image %>">
 
-          <img src="<%= r.image %>">
+        <div class="content">
 
-          <div class="content">
-
+          <div class="top">
             <h2><%= r.name %></h2>
 
-            <p><%= r.cuisine %></p>
-
-            <p class="rating">
+            <div class="rating">
               ⭐ <%= r.rating %>
-            </p>
+            </div>
+          </div>
 
-            <p>
+          <p class="cuisine">
+            <%= r.cuisine %>
+          </p>
+
+          <div class="bottom">
+
+            <div class="delivery">
               🚚 <%= r.deliveryTime %>
-            </p>
+            </div>
+
+            <a href="/restaurant/<%= r._id %>" class="btn">
+              View Menu
+            </a>
 
           </div>
 
         </div>
 
-      </a>
+      </div>
 
     <% }) %>
 
