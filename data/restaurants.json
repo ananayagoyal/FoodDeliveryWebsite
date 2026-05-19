@@ -525,6 +525,48 @@
         "category": "Snacks",
         "price": 179,
         "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=800&auto=format&fit=crop"
+      },
+      {
+        "name": "Cafe Mocha Special",
+        "category": "Coffee",
+        "price": 170,
+        "image": "https://media.istockphoto.com/id/157675911/photo/cappuccino-topped-with-swirls-of-chocolate-sauce.jpg?s=612x612&w=0&k=20&c=606NMYMjVnTmpSnJI537_IjW3lqfNJaH7Lc9Qg0BXPU="
+      },
+      {
+        "name": "Hazelnut Latte",
+        "category": "Coffee",
+        "price": 200,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAkQ9GvBM-C728vqz_TgrEZ3rmbbUT5tUBVA&s"
+      },
+      {
+        "name": "Veg Grilled Sandwich",
+        "category": "Snacks",
+        "price": 180,
+        "image": "https://static.toiimg.com/thumb/54714340.cms?width=1200&height=900"
+      },
+      {
+        "name": "Creamy White Sauce Pasta",
+        "category": "Pasta",
+        "price": 260,
+        "image": "https://www.recipesaresimple.com/wp-content/uploads/2018/03/white-sauce-pasta-recipe.jpg"
+      },
+      {
+        "name": "Caramel Macchiato",
+        "category": "Coffee",
+        "price": 220,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh8n2sXo7l3j5m1qj6kKZt9vH8u2aXGzLw&s"
+      },
+      {
+        "name": "Chocolate Croissant",
+        "category": "Pastry",
+        "price": 150,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh8n2sXo7l3j5m1qj6kKZt9vH8u2aXGzLw&s"
+      },
+      {
+        "name": "Blueberry Muffin",
+        "category": "Pastry",
+        "price": 130,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr4eVb1cJYpN7gO4iYl5sPzT1yWc3nM8fA&s"
       }
     ]
   },
