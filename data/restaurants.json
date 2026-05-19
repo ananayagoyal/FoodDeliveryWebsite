@@ -309,6 +309,48 @@
         "category": "Dessert",
         "price": 149,
         "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=800&auto=format&fit=crop"
+      },
+      {
+        "name": "Belgian Chocolate Pastry",
+        "category": "Pastry",
+        "price": 130,
+        "image": "https://liliyum.com/cdn/shop/products/Belgian-Couverture-Chocolate-Cake-5_2400x.jpg?v=1630921135"
+      },
+      {
+        "name": "Red velvet Pastry",
+        "category": "Pastry",
+        "price": 140,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ93Vfc_adaYobME1E0-zsd5o1dyd6HJ3Zvbw&s"
+      },
+      {
+        "name": "Oreo Milkshake",
+        "category": "Beverage",
+        "price": 150,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1bDK2oaEb1Q-v7BGR5IBrTSHrt9gOCna8pw&s"
+      },
+      {
+        "name": "Cold Coffee Frappe",
+        "category": "Beverage",
+        "price": 139,
+        "image": "https://cookinglsl.com/wp-content/uploads/2017/04/Vanilla-Frappe-1-15.jpg"
+      },
+      {
+        "name": "Strawberry Cheesecake Slice",
+        "category": "Beverage",
+        "price": 139,
+        "image": "https://www.thespruceeats.com/thmb/FVgJ6FkRjHenPPYHJgVrnEAHjyo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/strawberry-cheesecake-4588014-03-5a5769c5f121456c8b4aa5c7c6e06f61.jpg"
+      },
+      {
+        "name": "Vanilla Ice Cream Sundae",
+        "category": "Ice Cream",
+        "price": 120,
+        "image": "https://feelslikehomeblog.com/wp-content/uploads/2022/05/homemade-vanilla-ice-cream-recipe-no-eggs-square.png"
+      },
+      {
+        "name": "Nutella Pancakes",
+        "category": "Pancakes",
+        "price": 220,
+        "image": "https://images.immediate.co.uk/production/volatile/sites/2/2017/02/nutella-pancakes-1.jpg?crop=6px%2C3508px%2C4852px%2C2062px&resize=1200%2C630"
       }
     ]
   },
