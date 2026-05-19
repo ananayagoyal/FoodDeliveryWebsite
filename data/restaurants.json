@@ -233,6 +233,54 @@
         "category": "Healthy",
         "price": 160,
         "image": "https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?q=80&w=800&auto=format&fit=crop"
+      },
+      {
+        "name": "Grilled Paneer Salad Bowl",
+        "category": "Salad",
+        "price": 249,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjhGoPt3822pLYc0lx_I4SrU1pWuiCMY03aQ&s"
+      },
+      {
+        "name": "Quinoa Veggie Delight",
+        "category": "Healty Bowl",
+        "price": 275,
+        "image": "https://s.lightorangebean.com/media/20240914152510/Zesty-Vegan-Quinoa-Salad_-done.png"
+      },
+      {
+        "name": "Avocado Toast Combo",
+        "category": "Healty Breakfast",
+        "price": 219,
+        "image": "https://www.thespruceeats.com/thmb/dfa8Uq14SlF33FCAsPbDZVHp9bE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/avocado-toast-4174244-hero-03-d9d005dc633f44889ba5385fe4ebe633.jpg"
+      },
+      {
+        "name": "Mixed Berry Smoothie",
+        "category": "Beverage",
+        "price": 185,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV5dKjzCBSZeYQF5btsryWbEMEtowMm6un7A&s"
+      },
+      {
+        "name": "Detox Green Juice",
+        "category": "Salad",
+        "price": 139,
+        "image": "https://hips.hearstapps.com/hmg-prod/images/green-detox-juice-with-ginger-and-mint-in-glasses-royalty-free-image-1590670270.jpg?crop=0.627xw:0.940xh;0,0.0240xh&resize=1200:*"
+      },
+      {
+        "name": "Oats & Fruit Parfait",
+        "category": "Healthy Dessert",
+        "price": 170,
+        "image": "https://foolproofliving.com/wp-content/uploads/2017/12/Greek-Yogurt-Parfait-with-fruit.jpg"
+      },
+      {
+        "name": "Peanut Butter Banana Smoothie",
+        "category": "Beverage",
+        "price": 199,
+        "image": "https://www.joyfulhealthyeats.com/wp-content/uploads/2020/01/Creamy-Peanut-Butter-Banana-Smoothie-web-8.jpg"
+      },
+      {
+        "name": "Mediterranean Chicpea Bowl",
+        "category": "Vegan Bowl",
+        "price": 289,
+        "image": "https://www.familyfoodonthetable.com/wp-content/uploads/2020/04/Mediterranean-chickpea-salad-3.jpg"
       }
     ]
   },
