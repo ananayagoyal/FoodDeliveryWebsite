@@ -22,7 +22,49 @@
         "name": "Garlic Bread",
         "category": "Sides",
         "price": 149,
-        "image": "https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?q=80&w=800&auto=format&fit=crop"
+        "image": "https://www.ambitiouskitchen.com/wp-content/uploads/2023/02/Garlic-Bread-4.jpg"
+      },
+      {
+        "name": "Cheese Burst Pizza",
+        "category": "Pizza",
+        "price": 250,
+        "image": "https://i.pinimg.com/736x/eb/ee/e8/ebeee82a42e0428d299f86ab74faf77a.jpg"
+      },
+      {
+        "name": "Loaded Nachos",
+        "category": "Appetizers",
+        "price": 220,
+        "image": "https://www.oetker.in/assets/recipes/assets/b72049329c8742b98daf790c9ef937bd/1272x764/loaded-nachos.webp"
+      },
+      {
+        "name": "Fiery Paneer Blast Pizza",
+        "category": "Pizza",
+        "price": 349,
+        "image": "https://cdn.uengage.io/uploads/5/image-443232-1752218754.jpeg"
+      },
+      {
+        "name": "Cheesy Volcano Garlic Bread",
+        "category": "Sides",
+        "price": 219,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStW253gRGBDsaYznibqRIEZzQYEo3EIdCGgQ&s"
+      },
+      {
+        "name": "Creamy Alfredo Pasta",
+        "category": "Pasta",
+        "price": 279,
+        "image": "https://www.halfbakedharvest.com/wp-content/uploads/2021/04/One-Pot-Creamy-Penne-Alfredo-with-Spicy-Arugula-1.jpg"
+      },
+      {
+        "name": "Peri Peri Crunch Fries",
+        "category": "Sides",
+        "price": 155,
+        "image": "https://cdn.uengage.io/uploads/64261/image-591513-1754044989.jpeg"
+      },
+      {
+        "name": "Smoky BBQ Chicken Pizza",
+        "category": "Non-veg Pizza",
+        "price": 449,
+        "image": "https://sallysbakingaddiction.com/wp-content/uploads/2014/03/barbecue-bbq-chicken-pizza-3.jpg"
       }
     ]
   },
@@ -51,6 +93,48 @@
         "category": "Sides",
         "price": 99,
         "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?q=80&w=800&auto=format&fit=crop"
+      },
+      {
+        "name": "Double Patty Beast Burger",
+        "category": "Non-Veg Burger",
+        "price": 349,
+        "image": "https://img.magnific.com/free-photo/delicious-double-cheeseburger-with-melted-cheese_84443-86133.jpg?semt=ais_hybrid&w=740&q=80"
+      },
+      {
+        "name": "Crispy Paneer Crunch Burger",
+        "category": "Veg Burger",
+        "price": 235,
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2026/2/7/790d2e27-a1e1-4b36-bcfe-94adf8070843_bd996a37-c2b8-420b-8bda-199bf72697f5.JPG"
+      },
+      {
+        "name": "Cheesy Jalapeno Poppers",
+        "category": "Appetizers",
+        "price": 219,
+        "image": "https://res.cloudinary.com/lancewood/image/upload/c_scale,dpr_auto,f_auto,q_auto:eco,w_auto/v1632312377/umbraco/cheesy-jalapeno-d_ib5zhg.jpg"
+      },
+      {
+        "name": "Oreo Blast Thick Shake",
+        "category": "Beverage",
+        "price": 199,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4yujjblphOx09VopgqC8uhM6JGBtPoTFjAA&s"
+      },
+      {
+        "name": "BBQ Chicken Burger",
+        "category": "Burger",
+        "price": 249,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCPPHRouKV6GvAMCgKQH1XwbXmdk1a3qZPfQ&s"
+      },
+    {
+        "name": "Tandoori Chicken Wrap",
+        "category": "Wraps",
+        "price": 279,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg41BG3eXJNbOdiNf3LjKHJ-7QzSqFFLdyiA&s"
+      },
+      {
+        "name": "Chocolate Fudge Brownie",
+        "category": "Dessert",
+        "price": 149,
+        "image": "https://butternutbakeryblog.com/wp-content/uploads/2018/02/fudgy-dark-chocolate-brownies.jpg"
       }
     ]
   },
@@ -79,6 +163,48 @@
         "category": "Bread",
         "price": 49,
         "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=800&auto=format&fit=crop"
+      },
+      {
+        "name": "Dal Makhani",
+        "category": "Main Course",
+        "price": 249,
+        "image": "https://site-assets.grow.me/d8e3ab60-2c8d-402b-908c-911df591ac99/subscribe-widgets/atmsrn7bc5azbfmbseyj"
+      },
+      {
+        "name": "Hyderabadi Chicken Biryani",
+        "category": "Biryani",
+        "price": 329,
+        "image": "https://spiceindiaonline.com/wp-content/uploads/2018/12/Hyderabadi-Chicken-Dum-Biryani-2-500x450.jpg"
+      },
+      {
+        "name": "Veg Dum Biryani",
+        "category": "Biryani",
+        "price": 269,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI9Tw6cZWpDVACgNwAaqls8uxiPMPrUimMTA&s"
+      },
+      {
+        "name": "Tandoori Platter",
+        "category": "Starters",
+        "price": 399,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2gJpo2-YVoeStSiKRt_XhtgGsNpuv9gU9Kg&s"
+      },
+      {
+        "name": "Amritsari Chole Kulche",
+        "category": "North Indian",
+        "price": 210,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRo6Uk_szRbS4ms-DbCcGKQYxfnswIyi0ADg&s"
+      },
+      {
+        "name": "Mango Lassi Supreme",
+        "category": "Beverage",
+        "price": 120,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjlDLJ2DPhlQ0MHTGBg6UzDQhcsf8Heuwlow&s"
+      },
+      {
+        "name": "Gulab Jamun Royale",
+        "category": "Dessert",
+        "price": 99,
+        "image": "https://images.squarespace-cdn.com/content/v1/656a8de99f2656781317f8f9/68838bc4-8de8-4b52-8b32-c581147c4f4b/fc8467d6-54ed-410a-81e6-1ec2e13cd607-retina-large.jpg"
       }
     ]
   },
@@ -225,7 +351,7 @@
 
   {
     "name": "Biryani House",
-    "image": "https://images.unsplash.com/photo-1563379091339-03246963d29a?q=80&w=1200&auto=format&fit=crop",
+    "image": "https://www.cubesnjuliennes.com/wp-content/uploads/2020/01/Chicken-Biryani.jpg",
     "cuisine": "Biryani",
     "rating": 4.9,
     "deliveryTime": "35 mins",
