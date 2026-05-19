@@ -21,6 +21,7 @@ const JWT_SECRET = "super-secret-key";
 const User = require("./models/User");
 const Order = require("./models/Order");
 const Restaurant = require("./models/Restaurant");
+const Contact = require("./models/Contact");
 
 // ================= MIDDLEWARE =================
 app.use(express.urlencoded({ extended: true }));
@@ -344,10 +345,29 @@ app.get("/get-address", async (req, res) => {
 });
 
 // ================= CONTACT =================
-app.post("/contact", (req, res) => {
-  const { name, email, message } = req.body;
-  console.log("Contact:", name, email, message);
-  res.send("Message sent successfully!");
+app.post("/contact", async (req, res) => {
+
+  try {
+
+    const { name, email, message } = req.body;
+
+    const newContact = new Contact({
+      name,
+      email,
+      message
+    });
+
+    await newContact.save();
+
+    res.send("Message stored successfully ✅");
+
+  } catch (err) {
+
+    console.log(err);
+
+    res.send("Failed to save message ❌");
+  }
+
 });
 
 // ================= LOGOUT =================
