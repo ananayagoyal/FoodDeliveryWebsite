@@ -379,6 +379,48 @@
         "category": "Starter",
         "price": 159,
         "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa0c1f?q=80&w=800&auto=format&fit=crop"
+      },
+      {
+        "name": "Chicken Hakka Noodles",
+        "category": "Noodles",
+        "price": 239,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpTKKzEgHblPewdIZXUbQx4WvdkVHX9U25ow&s"
+      },
+      {
+        "name": "Schezwan Fried Rice",
+        "category": "Rice",
+        "price": 200,
+        "image": "https://www.cookclickndevour.com/wp-content/uploads/2016/04/schezwan-fried-rice-recipe-1.jpg"
+      },
+      {
+        "name": "Chicken Manchurian Gravy",
+        "category": "Main Course",
+        "price": 279,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8MJpil-81raOdprUegnIYvZGOBRZcNcIQWw&s"
+      },
+      {
+        "name": "Chilli Paneer",
+        "category": "Starters",
+        "price": 260,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyPmolFdbsSAAg4mZENnvph9hkhKoCJNj9EA&s"
+      },
+      {
+        "name": "Crispy Honey Chilli Potato",
+        "category": "Snacks",
+        "price": 200,
+        "image": "https://i.pinimg.com/736x/48/9a/bb/489abb29b2d64369cf19d5109b39a918.jpg"
+      },
+      {
+        "name": "Hot & Sour Soup",
+        "category": "Soup",
+        "price": 150,
+        "image": "https://www.cookingcarnival.com/wp-content/uploads/2023/09/Hot-and-sour-soup-4.jpg"
+      },
+      {
+        "name": "Classic Momos",
+        "category": "Momos",
+        "price": 170,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiyOlqCMgYbg2l1JGQb28yz2xldFCs1dArXQ&s"
       }
     ]
   },
