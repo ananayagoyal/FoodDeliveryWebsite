@@ -434,7 +434,7 @@
     "menu": [
       {
         "name": "Veg Taco",
-        "category": "Mexican",
+        "category": "Tacos",
         "price": 149,
         "image": "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?q=80&w=800&auto=format&fit=crop"
       },
@@ -449,6 +449,54 @@
         "category": "Mexican",
         "price": 249,
         "image": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?q=80&w=800&auto=format&fit=crop"
+      },
+      {
+        "name": "Spicy Chicken Taco",
+        "category": "Tacos",
+        "price": 190,
+        "image": "https://brandsitesplatform-res.cloudinary.com/image/fetch/w_1540,c_scale,q_auto:eco,f_auto,fl_lossy,dpr_1.0,e_sharpen:85/https://assets.brandplatform.generalmills.com%2F-%2Fmedia%2Fproject%2Fgmi%2Foldelpaso%2Foldelpaso-us%2Frecipes%2Fbz0eq3vouuie6rpcjmiqyq_gmi_hi_res_jpeg.jpeg%3F%201540w"
+      },
+      {
+        "name": "Loaded Nacho Cheese Bowl",
+        "category": "Appetizers",
+        "price": 219,
+        "image": "https://thumbs.dreamstime.com/b/deliciously-cheesy-loaded-nachos-fresh-toppings-black-bowl-mouthwatering-close-up-showcasing-melted-cheese-tomatoes-395638584.jpg"
+      },
+      {
+        "name": "Mexican Rice Burrito",
+        "category": "Burittos",
+        "price": 300,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLq7ND1ELrHo5F05ZtnBvKE8BpjmENOyJRA&s"
+      },
+      {
+        "name": "Cheesy Quesadilla",
+        "category": "Quesadilla",
+        "price": 240,
+        "image": "https://i.ytimg.com/vi/NyGPNwCJRnc/maxresdefault.jpg"
+      },
+      {
+        "name": "Peri Peri Fries",
+        "category": "Sides",
+        "price": 120,
+        "image": "https://c.ndtvimg.com/2020-12/1h1iv2jg_peri-peri-fries_640x480_08_December_20.jpg"
+      },
+      {
+        "name": "Slasa & Chips",
+        "category": "Snacks",
+        "price": 130,
+        "image": "https://thumbs.dreamstime.com/b/chips-salsa-clipping-path-7183411.jpg"
+      },
+      {
+        "name": "Virgin Mojito",
+        "category": "Beverage",
+        "price": 119,
+        "image": "https://www.sustainablecooks.com/wp-content/uploads/2018/06/Classic-Virgin-Mojito-Recipe-2-500x500.jpg"
+      },
+      {
+        "name": "Churros with Chocolate Dip",
+        "category": "Dessert",
+        "price": 175,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSIbCift40BaBHZOK6ReTG_kQBZrXrK9WW0g&s"
       }
     ]
   },
