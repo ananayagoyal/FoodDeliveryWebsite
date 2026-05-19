@@ -595,6 +595,48 @@
         "category": "Sides",
         "price": 49,
         "image": "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?q=80&w=800&auto=format&fit=crop"
+      },
+      {
+        "name": "Lucknowi Mutton Biryani",
+        "category": "Biryani",
+        "price": 400,
+        "image": "https://media-cdn.tripadvisor.com/media/photo-s/1b/74/07/67/lucknowi-mutton-biryani.jpg"
+      },
+      {
+        "name": "Paneer Tikka Biryani",
+        "category": "Biryani",
+        "price": 240,
+        "image": "https://ministryofcurry.com/wp-content/uploads/2023/10/paneer-biryani_-9.jpg"
+      },
+      {
+        "name": "Egg Biryani",
+        "category": "Biryani",
+        "price": 219,
+        "image": "https://sinfullyspicy.com/wp-content/uploads/2025/04/1200-by-1200-images-2-500x500.jpg"
+      },
+      {
+        "name": "Chicken Seekh Kebab",
+        "category": "Starters",
+        "price": 275,
+        "image": "https://www.ndtv.com/cooks/images/chicken.seekh.jpg"
+      },
+      {
+        "name": "Butter Raita",
+        "category": "Sides",
+        "price": 65,
+        "image": "https://vps029.manageserver.in/test/wp-content/uploads/2024/01/raita.jpg"
+      },
+      {
+        "name": "Gulab Jamun",
+        "category": "Dessert",
+        "price": 90,
+        "image": "https://cdn.dotpe.in/longtail/store-items/1161396/YnhT6Gpo.webp"
+      },
+      {
+        "name": "Masala Cola",
+        "category": "Beverage",
+        "price": 79,
+        "image": "https://spicecravings.com/wp-content/uploads/2022/06/Masala-Coke-Featured.jpg"
       }
     ]
   },
