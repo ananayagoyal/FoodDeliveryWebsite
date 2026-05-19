@@ -113,19 +113,27 @@ app.get("/contact", (req, res) => {
 
 app.get("/restaurants", async (req, res) => {
 
+  const restaurants = await Restaurant.find();
+
+  res.render("restaurants", { restaurants });
+
+});
+
+app.get("/restaurant/:id", async (req, res) => {
   try {
+    const restaurant = await Restaurant.findById(req.params.id);
 
-    const restaurants = await Restaurant.find();
+    if (!restaurant) {
+      return res.send("Restaurant not found ❌");
+    }
 
-    res.render("restaurants", {
-      restaurants
+    res.render("restaurant-menu", {
+      restaurant
     });
-
   } catch (err) {
     console.log(err);
-    res.send("Error loading restaurants ❌");
+    res.send("Error loading restaurant ❌");
   }
-
 });
 
 // ================= CART =================

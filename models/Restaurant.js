@@ -2,17 +2,19 @@ const mongoose = require("mongoose");
 
 const menuSchema = new mongoose.Schema({
   name: String,
-  category: String,
+  description: String,
   price: Number,
+  rating: String,
   image: String
 });
 
 const restaurantSchema = new mongoose.Schema({
   name: String,
-  image: String,
   cuisine: String,
-  rating: Number,
-  deliveryTime: String,
+  rating: String,
+  time: String,
+  image: String,
+
   menu: [menuSchema]
 });
 
