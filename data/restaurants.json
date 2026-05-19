@@ -665,7 +665,50 @@
         "category": "Street Food",
         "price": 179,
         "image": "https://images.unsplash.com/photo-1626132647523-66d6f0b0bcb0?q=80&w=800&auto=format&fit=crop"
-      }
+      },
+      {
+        "name": "Aloo Tikki Chaat",
+        "category": "Chaat",
+        "price": 60,
+        "image": "https://sinfullyspicy.com/wp-content/uploads/2023/03/1-1-500x375.jpg"
+      },
+      {
+        "name": "Dahi Papdi Chaat",
+        "category": "Chaat",
+        "price": 100,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfvy3f2R-b0Fsfh7QkO-r7fZaXTlYXp6Y-lw&s"
+      },
+      {
+        "name": "Veg Momos",
+        "category": "Snacks",
+        "price": 119,
+        "image": "https://images.news18.com/ibnkhabar/uploads/2023/11/Veg-Momos-Recipe-2023-11-87c2fbae17097a1a615fb67dec79849d-3x2.jpg"
+      },
+
+    {
+        "name": "Samosa",
+        "category": "Snacks",
+        "price": 50,
+        "image": "https://images.unsplash.com/photo-1601050690117-94f5f6fa0c1f?q=80&w=800&auto=format&fit=crop"
+    },
+    {
+        "name": "Jalebi",
+        "category": "Dessert",
+        "price": 120,
+        "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=800&auto=format&fit=crop"
+    },
+    {
+        "name": "Masala Chai",
+        "category": "Beverage",
+        "price": 30,
+        "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=800&auto=format&fit=crop"  
+     }, 
+        {
+            "name": "Masala Maggi",
+            "category": "Quick Bites",
+            "price": 80,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm2KF-Y1y7ZinjQ8YBeKi66Qc3GQY4kA96Fw&s"
+        }
     ]
   }
 ]
