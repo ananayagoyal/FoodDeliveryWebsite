@@ -100,8 +100,29 @@ app.get("/home", (req, res) => {
   res.render("home");
 });
 
-app.get("/menu", (req, res) => {
-  res.render("menu");
+app.get("/menu", async (req, res) => {
+
+  const restaurants = await Restaurant.find();
+
+  let allMenuItems = [];
+
+  restaurants.forEach((restaurant) => {
+
+    restaurant.menu.forEach((item) => {
+
+      allMenuItems.push({
+        ...item._doc,
+        restaurantName: restaurant.name
+      });
+
+    });
+
+  });
+
+  res.render("menu", {
+    menuItems: allMenuItems
+  });
+
 });
 
 app.get("/contact", (req, res) => {
